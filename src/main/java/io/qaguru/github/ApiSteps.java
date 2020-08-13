@@ -26,4 +26,13 @@ public class ApiSteps {
         // @formatter:on
     }
 
+    @Step("LogIn")
+    public Issue logIn(){
+        given()
+                .header("Authorization", "token 728126394059a3991c9e6e3b8e83121401f35f6e")
+                .baseUri("https://api.github.com");
+
+        return null;
+    }
+
 }
