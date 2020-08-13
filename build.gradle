@@ -27,6 +27,9 @@ test {
     useJUnitPlatform()
 }
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 dependencies {
     compile("io.qameta.allure:allure-java-commons:2.13.5")
     compile("io.qameta.allure:allure-rest-assured:2.13.5")

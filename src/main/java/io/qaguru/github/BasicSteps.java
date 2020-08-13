@@ -17,7 +17,7 @@ public class BasicSteps {
     private static final String LOGIN_URL = "https://github.com/login";
     private static final String REPOSITORY = "/eroshenkoam/allure-example";
     private static final String EMAIL = "irinamarinko@gmail.com";
-    private static final String PASSWORD ="RT65weds/";
+    private static final String PASSWORD ="password";
 
     @Step("Открываем главную страницу")
     public void openMainPage() {
@@ -42,7 +42,7 @@ public class BasicSteps {
     @Step("Create Issue")
     public void createIssue() {
         $(".btn-primary > span").click();
-        $("#issue_title").sendKeys("IK New Issue 1");
+        $("#issue_title").sendKeys("IK New Issue");
         $(withText("Submit new issue")).click();
     }
 

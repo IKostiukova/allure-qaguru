@@ -24,7 +24,7 @@ public class IssueCreationStepsVersionTests {
     private static final String LOGIN_URL = "https://github.com/login";
     private static final String REPOSITORY = "/eroshenkoam/allure-example";
     private static final String EMAIL = "irinamarinko@gmail.com";
-    private static final String PASSWORD ="RT65weds/";
+    private static final String PASSWORD ="password";
 
     @Test
     @Severity(value = SeverityLevel.NORMAL)

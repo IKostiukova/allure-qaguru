@@ -21,22 +21,12 @@ import static io.qameta.allure.Allure.step;
 
 public class IssueCreationWithReusedBasicStepsVersionTests {
 
-    /*private static final String LOGIN_URL = "https://github.com/login";
-    private static final String REPOSITORY = "/eroshenkoam/allure-example";
-    private static final String EMAIL = "irinamarinko@gmail.com";
-    private static final String PASSWORD ="RT65weds/";*/
-
     private final BasicSteps steps = new BasicSteps();
 
     @Test
     @Severity(value = SeverityLevel.NORMAL)
     @DisplayName("Issue creation without Lable and Assignee")
     public void CreateIssueWithoutLabelAndAssignee() {
-       /* parameter("Login page", LOGIN_URL);
-        parameter("Email", EMAIL);
-        parameter("Password", PASSWORD);
-        parameter("Repository", REPOSITORY);*/
-
         steps.logIn();
         steps.openRepositoryAndIssueTab();
         steps.createIssue();
