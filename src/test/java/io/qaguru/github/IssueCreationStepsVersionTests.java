@@ -18,7 +18,6 @@ import static io.qameta.allure.Allure.step;
 
 @Owner("i.kostiukova")
 @Feature("Issues")
-
 public class IssueCreationStepsVersionTests {
 
     private static final String LOGIN_URL = "https://github.com/login";
@@ -56,7 +55,6 @@ public class IssueCreationStepsVersionTests {
         });
 
         step("Check that issue is created without lable and assignee", () -> {
-            ;
             $(byText("IK New Issue 1")).shouldHave(text("IK New Issue 1"));
             $(".js-issue-assignees").shouldHave(text("No one assigned"));
             $(".labels").shouldHave(text("None yet"));
